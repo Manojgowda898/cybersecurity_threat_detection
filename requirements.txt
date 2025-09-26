@@ -1,0 +1,10 @@
+Flask==3.1.2        # Web framework to create the server and API endpoints for your threat detection system
+Flask-Cors==6.0.1   # Handles Cross-Origin Resource Sharing so your frontend (dashboard) can access the Flask API
+Flask-SocketIO==5.5.1  # Enables real-time communication between the server and dashboard (for live threat updates)
+eventlet==0.33.3    # Async server needed by Flask-SocketIO for handling multiple connections efficiently
+pandas==2.3.2       # Data manipulation and preprocessing of network traffic or threat datasets
+numpy==2.3.2        # Efficient numerical computations for features and matrices in your ML models
+scikit-learn==1.7.2 # Machine learning library used to train and run models like Random Forest, SVM, etc.
+joblib==1.5.2       # Saves and loads trained ML models for prediction in production
+psutil==7.1.0       # System and process monitoring (CPU, memory, network) for detecting abnormal behavior
+requests==2.32.5    # HTTP requests library, used for server-ready checks or integrating external APIs

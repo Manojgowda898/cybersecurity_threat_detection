@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI-Powered Cybersecurity Threat Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1>🛡️ AI-Powered Cybersecurity Threat Detection</h1>
+        <p>Real-time network monitoring and threat analysis</p>
+    </header>
+
+    <section class="stats">
+        <div class="stat-item">
+            <h3 id="totalThreats">0</h3>
+            <p>Total Threats Detected</p>
+        </div>
+        <div class="stat-item">
+            <h3 id="highAlerts">0</h3>
+            <p>High Priority Alerts</p>
+        </div>
+        <div class="stat-item">
+            <h3 id="systemStatus">Online</h3>
+            <p>System Status</p>
+        </div>
+    </section>
+
+    <section class="card manual-analysis">
+        <h2>🔍 Manual Threat Analysis</h2>
+        <div class="form-group">
+            <label>Source IP:</label>
+            <input type="text" id="sourceIp" value="192.168.1.100">
+        </div>
+        <div class="form-group">
+            <label>Protocol:</label>
+            <select id="protocol">
+                <option value="TCP">TCP</option>
+                <option value="UDP">UDP</option>
+                <option value="ICMP">ICMP</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Failed Login Attempts:</label>
+            <input type="number" id="failedLogins" value="0">
+        </div>
+        <div class="form-group">
+            <label>Connection Duration (seconds):</label>
+            <input type="number" id="duration" value="10">
+        </div>
+        <button onclick="analyzeThreat()">🔍 Analyze Threat</button>
+    </section>
+
+    <section class="card" id="resultsCard" style="display:none;">
+        <h2>📊 Analysis Results</h2>
+        <div id="analysisResults"></div>
+    </section>
+
+    <section class="card">
+        <h2>🚨 Recent Alerts</h2>
+        <div id="recentAlerts"></div>
+    </section>
+
+    <section class="card">
+        <h2>📈 Threat Statistics</h2>
+        <canvas id="threatChart"></canvas>
+    </section>
+</div>
+
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>
