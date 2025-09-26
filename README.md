@@ -124,7 +124,7 @@ _Add screenshots, GIFs, or terminal logs here._
 
 - **Web Dashboard**
 ![Dashboard Screenshot](docs/demo-dashboard.png)
-![Model Accuracy Graph](docs/threat-classification-graph.png)
+![Model Accuracy Graph](docs/threat_classification_graph.png)
 
 **Example:**
 - **Training Logs**
