@@ -150,16 +150,15 @@ Accuracy: 98.7%
 **Model Accuracy Graph:**  
 ![Model Accuracy Graph](docs/model-accuracy-graph.png)
 
+**Project Demo**
+![Live Detection Demo](docs/live_demo.gif)
+
 ---
 
 ## 🔄 Workflow
 **Traffic Simulation → ML Model Training → Real-Time Detection → Dashboard Alert**
 
 ![Workflow Diagram](docs/workflow.png)
-
----
-## **Project Demo**
-![Live Detection Demo](docs/live_demo.gif)
 
 ---
 
