@@ -16,9 +16,11 @@ In today’s digital world, organizations face constant threats such as malware,
 This project aims to tackle that problem by building an **AI-driven threat detection system**.
 
 ### 🔹 Core Idea
+
 Instead of only checking for known attack signatures, we train **machine learning models** on network traffic data to learn the difference between normal and malicious activities. Once trained, the system can flag suspicious activity in real-time.
 
 ### 🔹 How It Works
+
 1. **Data Simulation** – The system generates synthetic network traffic (both normal and malicious).
 2. **Model Training** – ML models (Random Forest, SVM, Neural Network) are trained to classify traffic.
 3. **Real-Time Detection** – The system continuously monitors incoming traffic and uses trained models to detect threats.
@@ -26,6 +28,7 @@ Instead of only checking for known attack signatures, we train **machine learnin
 5. **Database Logging** – All detected threats are stored in an SQLite database for later analysis.
 
 ### 🔹 Why It’s Useful
+
 - Demonstrates the **power of AI in cybersecurity**.
 - Provides a **hands-on simulation** of modern security systems.
 - Can be extended to use **real-world datasets** and integrated with live packet sniffers like Scapy/Wireshark.
@@ -61,6 +64,7 @@ cybersecurity_threat_detection/
 ---
 
 ## 🚀 Features
+
 - Real-time threat detection
 - Simulation of network traffic (normal vs malicious)
 - Multiple ML models (Random Forest, SVM, Neural Network)
@@ -71,6 +75,7 @@ cybersecurity_threat_detection/
 ---
 
 ## 🛠️ Tech Stack
+
 - **Backend**: Flask, Flask-SocketIO
 - **Machine Learning**: scikit-learn, TensorFlow/PyTorch
 - **Frontend**: HTML (Jinja2 templates), CSS, JavaScript
@@ -80,6 +85,7 @@ cybersecurity_threat_detection/
 ---
 
 ## ⚡ Installation Guide
+
 ```bash
 git clone https://github.com/Manojgowda898/cybersecurity_threat_detection.git
 cd cybersecurity_threat_detection
@@ -93,24 +99,28 @@ pip install -r requirements.txt
 ## ▶️ How to Run
 
 ### 1. Train Models
+
 ```bash
 python train_models.py
 ```
 > Trained models will be saved in `models_saved/`.
 
 ### 2. Simulate Traffic
+
 ```bash
 python simulate_traffic.py
 ```
 > Generates synthetic normal and malicious network packets.
 
 ### 3. Run Full System
+
 ```bash
 python run_system.py
 ```
 > This runs the simulator + detection + dashboard.
 
 ### 4. Start Web Dashboard
+
 ```bash
 python app.py
 ```
@@ -128,6 +138,7 @@ python app.py
 
 **Example:**
 - **Training Logs**
+
 ```
 Training random_forest...
 Accuracy: 100%
@@ -158,12 +169,12 @@ Accuracy: 98.7%
 
 ## 🔄 Workflow
 **Traffic Simulation → ML Model Training → Real-Time Detection → Dashboard Alert**
-
 ![Workflow Diagram](docs/workflow.png)
 
 ---
 
 ## 🌱 Future Improvements
+
 - Add live packet capture (Wireshark/Scapy integration)
 - Deploy with Docker and Kubernetes
 - Use real-world datasets (CICIDS, NSL-KDD, etc.)
@@ -172,16 +183,20 @@ Accuracy: 98.7%
 ---
 
 ## 📜 License
+
 This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
 
 ---
 
 ## 🤝 Contributing
-Contributions are welcome! Please check [Contributing Guidelines](CONTRIBUTING.md).
+
+Contributions are welcome! Please read our [Contributing Guidelines](CONTRIBUTING.md) before submitting issues or pull requests.
+
 
 ---
 
 ## 🙌 Acknowledgements
+
 - scikit-learn team for ML algorithms
 - TensorFlow/PyTorch community
 - Flask-SocketIO developers
