@@ -122,6 +122,8 @@ python app.py
 
 - **Web Dashboard**
 ![Dashboard Screenshot](docs/demo-dashboard.png)
+
+- **Threat Classification**
 ![Model Accuracy Graph](docs/threat_classification_graph.png)
 
 **Example:**
