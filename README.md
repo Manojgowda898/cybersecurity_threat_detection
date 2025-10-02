@@ -158,7 +158,7 @@ Accuracy: 98.7%
 ![Workflow Diagram](docs/workflow.png)
 
 ---
-- **Live System in Action (GIF)**
+- **Project Demo**
 ![Live Detection Demo](docs/live_demo.gif)
 
 ---
