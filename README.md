@@ -119,7 +119,6 @@ python app.py
 ---
 
 ## 🎥 Demo
-_Add screenshots, GIFs, or terminal logs here._
 
 - **Web Dashboard**
 ![Dashboard Screenshot](docs/demo-dashboard.png)
